@@ -1,0 +1,31 @@
+{
+  "name": "varal-rds",
+  "version": "1.0.0",
+  "description": "Relational Database Service for Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varaljs/varal-rds.git"
+  },
+  "author": "dmpty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/varaljs/varal-rds/issues"
+  },
+  "homepage": "https://github.com/varaljs/varal-rds#readme",
+  "devDependencies": {
+    "mysql2": "^1.5.1",
+    "pg": "^7.4.1"
+  },
+  "dependencies": {
+    "varal-collection": "^1.0.3"
+  },
+  "files": [
+    "README.md",
+    "index.js",
+    "lib/"
+  ]
+}
