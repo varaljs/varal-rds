@@ -3,9 +3,18 @@ const SUPPORTED = new Map([
     ['pg', './lib/pg']
 ]);
 
-module.exports = (server, options) => {
+const constructor = (server, options) => {
     if (!SUPPORTED.has(server))
         throw new Error('varal-rds only support mysql & pg now');
     server = require(SUPPORTED.get(server));
     return new server(options);
+};
+
+module.exports = constructor;
+
+module.exports.varal = server => {
+    return ctn => {
+        const options = ctn.config.db;
+        return constructor(server, options);
+    };
 };
