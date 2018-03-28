@@ -12,9 +12,9 @@ const constructor = (server, options) => {
 
 module.exports = constructor;
 
-module.exports.varal = server => {
+module.exports.varal = (server, alias) => {
     return ctn => {
-        const options = ctn.config.db;
+        const options = ctn.config[alias];
         return constructor(server, options);
     };
 };
