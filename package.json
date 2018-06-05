@@ -21,7 +21,7 @@
     "pg": "^7.4.1"
   },
   "dependencies": {
-    "varal-collection": "^1.0.3"
+    "varal-collection": "^1.0.6"
   },
   "files": [
     "README.md",
