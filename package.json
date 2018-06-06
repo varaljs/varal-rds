@@ -1,6 +1,6 @@
 {
   "name": "varal-rds",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Relational Database Service for Node",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,7 @@
     "pg": "^7.4.1"
   },
   "dependencies": {
-    "varal-collection": "^1.0.6"
+    "varal-collection": "^1.0.7"
   },
   "files": [
     "README.md",
