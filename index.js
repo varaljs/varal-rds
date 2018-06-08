@@ -12,6 +12,8 @@ const constructor = (server, options) => {
 
 module.exports = constructor;
 
+module.exports.model = require('./lib/model');
+
 module.exports.varal = (server, alias) => {
     return ctn => {
         const options = ctn.config[alias];
