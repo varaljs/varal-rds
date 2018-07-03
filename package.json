@@ -1,6 +1,6 @@
 {
   "name": "varal-rds",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "description": "Relational Database Service for Node",
   "main": "index.js",
   "scripts": {
